@@ -1,0 +1,15 @@
+.texto_responsive:before{
+  content: attr(data-desktoptext);
+}
+
+@media (max-width:1199px) {
+    .texto_responsive:before {
+        content: attr(data-tablettext);
+    }
+}
+
+@media (max-width:479px){
+    .texto_responsive:before {
+        content: attr(data-phonetext);
+    }
+}

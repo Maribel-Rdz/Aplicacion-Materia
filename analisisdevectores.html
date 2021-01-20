@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">  
+  	<title>Análisis de vectores</title>
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos2.css">
+	<link rel="stylesheet" href="css/piedepagina.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="text-center">Análisis de vectores</h1>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+					<div class="letra">		
+						<form name="vect">										
+							<br>
+							<p>Introduzca las coordenadas de tres vectores:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>u = </p> 
+								<input type="text" size="2">
+								<input type="text" size="2">
+								<input type="text" size="2">
+							</div>
+							<br>
+	
+							<div class="yup">
+								<p>v = </p> 
+								<input type="text" size="2">
+								<input type="text" size="2">
+								<input type="text" size="2">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>w = </p> 
+								<input type="text" size="2">
+								<input type="text" size="2">
+								<input type="text" size="2">
+							</div>
+							<br>
+
+							<input type="button" value="Calcular" onClick="calcular()">
+							<br><br><br>
+							<p>Magnitud del vector:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>|u| = </p> 
+								<input type="text" size="2"name="pq">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>|v| = </p> 
+								<input type="text" size="2"name="pq1">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>|w| = </p> 
+								<input type="text" size="2"name="pq2">
+							</div>
+							<br><br><br>
+
+							<p>Vector unitario:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>U = </p> 
+								<input type="text" size="2" name="pq3">
+								<input type="text" size="2" name="pq4">
+								<input type="text" size="2" name="pq5">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>V = </p> 
+								<input type="text" size="2" name="pq6">
+								<input type="text" size="2" name="pq7">
+								<input type="text" size="2" name="pq8">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>W = </p> 
+								<input type="text" size="2" name="pq9">
+								<input type="text" size="2" name="pq10">
+								<input type="text" size="2" name="pq11">
+							</div>
+							<br><br><br>
+
+							<p>Dirección:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>Puv = </p> 
+								<input type="text" size="2" name="diruv">
+								<input type="text" size="2" name="diruv1">
+								<input type="text" size="2" name="diruv2">
+							</div>
+							<br> 
+
+							<div class="yup">
+								<p>Pvw = </p> 
+								<input type="text" size="2" name="dirvw">
+								<input type="text" size="2" name="dirvw1">
+								<input type="text" size="2" name="dirvw2">
+							</div>
+							<br>  
+
+							<div class="yup">
+								<p>Pwu = </p> 
+								<input type="text" size="2" name="dirwu">
+								<input type="text" size="2" name="dirwu1">
+								<input type="text" size="2" name="dirwu2">
+							</div>
+							<br><br>
+
+							<div class="yup">
+								<p>Pvu = </p> 
+								<input type="text" size="2" name="dirvu">
+								<input type="text" size="2" name="dirvu1">
+								<input type="text" size="2" name="dirvu2">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>Pwv = </p> 
+								<input type="text" size="2" name="dirwv">
+								<input type="text" size="2" name="dirwv1">
+								<input type="text" size="2" name="dirwv2">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>Puw = </p> 
+								<input type="text" size="2" name="diruw">
+								<input type="text" size="2" name="diruw1">
+								<input type="text" size="2" name="diruw2">
+							</div>
+							<br><br><br>
+
+							<p>Magnitud entre vectores:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>|UV| = </p> 
+								<input type="text" size="2" name="pq12">
+							</div>
+							<br>  
+
+							<div class="yup">
+								<p>|VW| = </p> 
+								<input type="text" size="2" name="pq13">
+							</div>
+							<br> 
+
+							<div class="yup">
+								<p>|WU| = </p> 
+								<input type="text" size="2" name="pq14">
+							</div>
+							<br><br><br>
+
+							<p>Vector unitario entre vectores:</p>
+							<br><br>
+
+							<div class="yup">
+								<p>UV = </p> 
+								<input type="text" size="2" name="pq15">
+								<input type="text" size="2" name="pq16">
+								<input type="text" size="2" name="pq17">
+							</div>
+							<br>  
+
+							<div class="yup">
+								<p>VW = </p> 
+								<input type="text" size="2" name="pq18">
+								<input type="text" size="2" name="pq19">
+								<input type="text" size="2" name="pq20">
+							</div>
+							<br> 
+
+							<div class="yup">
+								<p>WU = </p> 
+								<input type="text" size="2" name="pq21">
+								<input type="text" size="2" name="pq22">
+								<input type="text" size="2" name="pq23">
+							</div>
+							<br>
+
+						</form>	
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<script src="js/anvectores.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
+</html>

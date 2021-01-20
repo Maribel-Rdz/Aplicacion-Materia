@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">  
+  	<title>Vectores</title>
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos2.css">
+	<link rel="stylesheet" href="css/piedepagina.css">
+</head>
+
+<body>
+
+	<header>
+		<h1 class="text-center">Vectores</h1>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+				<div class="letra">		
+					<form name="vect">
+
+						<p>Introduzca las coordenadas de los vectores:</p>
+						<br>
+
+						<div class="yup">
+							<p>u = </p> 
+							<input type="text" size="2">
+							<input type="text" size="2">
+							<input type="text" size="2">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>v = </p> 
+							<input type="text" size="2">
+							<input type="text" size="2">
+							<input type="text" size="2">
+						</div>
+						<br>
+
+						<input type="button" value="Calcular" onClick="calcular()">
+						<br><br>
+
+						<div class="yup">
+							<p>|u| = </p> 
+							<input type="text" size="2"name="fs">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>|v| = </p> 
+							<input type="text" size="2"name="fs1">
+						</div>
+						<br>				
+
+						<div class="yup">
+							<p>Producto escalar (u.v) = </p> 
+							<input type="text" size="2" name="uv">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>Producto vectorial (uxv) = </p> 
+							<br>
+							<input type="text" size="2"name="uvx">
+							<input type="text" size="2"name="uvy">
+							<input type="text" size="2"name="uvz">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>M&oacute;dulo del producto vectorial |uxv| = </p> 
+							<input type="text" size="2"name="fs2">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>&Aacute;ngulo del producto punto = </p> 
+							<input type="text" size="2" name="fs3">
+						</div>
+						<br>
+
+						<div class="yup">
+							<p>&Aacute;ngulo del producto cruz = </p> 
+							<input type="text" size="2" name="fs4">
+						</div>
+						<br>
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+				
+ 	<script src="js/vects.js"></script>
+	<script src="ja/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+ </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">  
+  	<title>Sistemas de coordenadas</title>
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos2.css">
+	<link rel="stylesheet" href="css/piedepagina.css">
+</head>
+
+<body>
+
+	<header>
+		<h1 class="text-center">Análisis de sistemas de coordenadas</h1>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+					<div class="letra">	
+						<form name="vect">
+
+							<p>Introduzca las coordenadas del vector:</p>
+							<br>
+
+							<div class="yup">
+								<p>u =</p> 
+								<input type="text" size="2">
+								<input type="text" size="2">
+								<input type="text" size="2">
+							</div>
+							<br><br>
+
+							<input type="button" value="Calcular" onClick="calcular()"><br><br>
+
+
+
+							<p>Transformación de coordenadas cartesianas a cilíndricas</p>
+							<br>
+							<div class="yup">
+								<p>R =</p> 
+								<input type="text" size="2"name="lu">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>&phi; =</p> 
+								<input type="text" size="2"name="lu1">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>z =</p>   
+								<input type="text" size="2"name="lu2">
+							</div>
+							<br>
+
+							<p>Transformación de coordenadas cilíndricas a cartesianas</p>
+							<br>
+							<div class="yup">
+								<p>x =</p> 
+								<input type="text" size="2" name="lu3">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>y =</p> 
+								<input type="text" size="2" name="lu4">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>z =</p> 
+								<input type="text" size="2" name="lu5">
+							</div>
+							<br>
+
+
+							<p>Transformación de coordenadas cartesianas a esféricas</p>
+							<br>
+							<div class="yup">
+								<p>r =</p>       
+								<input type="text" size="2" name="lu6">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>&theta; =</p> 
+								<input type="text" size="2" name="lu7">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>&phi; =</p>   
+								<input type="text" size="2" name="lu8">
+							</div>
+							<br>
+
+
+							<p>Transformación de coordenadas esféricas a cartesianas</p>
+							<br>
+							<div class="yup">
+								<p>x =</p> 
+								<input type="text" size="2" name="lu9">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>y =</p> 
+								<input type="text" size="2" name="lu10">
+							</div>
+							<br>
+
+							<div class="yup">
+								<p>z =</p> 
+								<input type="text" size="2" name="lu11">
+							</div>
+							<br>
+
+						</form>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<script src="js/coordenadas.js"></script>
+	<script src="js/jquery.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	
+</body>
+</html>
